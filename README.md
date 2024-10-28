@@ -6,6 +6,7 @@
 <br><br>
 
 ## CLI
+- https://huggingface.co/docs/huggingface_hub/guides/cli
 
 <br><br>
 
