@@ -31,6 +31,12 @@ Example:
 huggingface-cli download gpt2 config.json
 ```
 
+
+
+
+<br><br>
+<br><br>
+
 ## Download an Entire Repository
 Download all files from a repository:
 ```bash
@@ -40,6 +46,13 @@ Example:
 ```bash
 huggingface-cli download HuggingFaceH4/zephyr-7b-beta
 ```
+
+
+
+
+<br><br>
+<br><br>
+
 
 ## Download Multiple Files
 Specify files sequentially:
@@ -60,6 +73,23 @@ Example:
 huggingface-cli download stabilityai/stable-diffusion-xl-base-1.0 --include "*.safetensors" --exclude "*.fp16.*"
 ```
 
+
+<br><br>
+<br><br>
+
+
+
+## Download folder
+```shell
+huggingface-cli download bartowski/DeepSeek-Coder-V2-Instruct-GGUF --include "DeepSeek-Coder-V2-Instruct-Q4_K_M.gguf/*" --local-dir "/home/xxxxx/Projects/ai/resources/models/llm/deepseek"
+```
+
+
+
+<br><br>
+<br><br>
+
+
 ## Download a Dataset or Space
 Specify the repository type:
 ```bash
@@ -71,6 +101,15 @@ huggingface-cli download HuggingFaceH4/ultrachat_200k --repo-type dataset
 huggingface-cli download HuggingFaceH4/zephyr-chat --repo-type space
 ```
 
+
+
+
+
+
+<br><br>
+<br><br>
+
+
 ## Download a Specific Revision
 Use the `--revision` option for commits, branches, or tags:
 ```bash
@@ -80,6 +119,12 @@ Example:
 ```bash
 huggingface-cli download bigcode/the-stack --repo-type dataset --revision v1.1
 ```
+
+
+
+<br><br>
+<br><br>
+
 
 ## Download to a Local Folder
 Use `--local-dir` to download files into a specific folder:
@@ -91,6 +136,12 @@ Example:
 huggingface-cli download adept/fuyu-8b model-00001-of-00002.safetensors --local-dir fuyu
 ```
 
+
+<br><br>
+<br><br>
+
+
+
 ## Specify Cache Directory
 Define a custom cache directory using `--cache-dir`:
 ```bash
@@ -100,6 +151,12 @@ Example:
 ```bash
 huggingface-cli download adept/fuyu-8b --cache-dir ./path/to/cache
 ```
+
+
+<br><br>
+<br><br>
+
+
 
 ## Use a Token for Private Repositories
 Authenticate using the `--token` option:
@@ -111,6 +168,11 @@ Example:
 huggingface-cli download gpt2 config.json --token hf_****
 ```
 
+
+<br><br>
+<br><br>
+
+
 ## Quiet Mode
 Silence verbose output with the `--quiet` option:
 ```bash
@@ -120,6 +182,11 @@ Example:
 ```bash
 huggingface-cli download gpt2 --quiet
 ```
+
+
+<br><br>
+<br><br>
+
 
 ## Download Timeout
 Increase the download timeout by setting the environment variable:
